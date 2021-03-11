@@ -15,6 +15,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using HotelListing.Configuration;
+using HotelListing.IRepository;
+using HotelListing.Repository;
 
 namespace HotelListing
 {
@@ -44,11 +46,15 @@ namespace HotelListing
             services.AddAutoMapper(typeof(MapperInitializer));
             string connection = Configuration.GetConnectionString("HotelConn");
             services.AddDbContext<DatabaseContext>(option => { option.UseSqlServer(connection); });
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(opt=>
+                                                        opt.SerializerSettings.ReferenceLoopHandling=
+                                                        Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelListing", Version = "v1" });
             });
+
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

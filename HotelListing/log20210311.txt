@@ -1,0 +1,451 @@
+2021-03-11 18:01:27.789 +03:30 [INF] Starting web Host
+2021-03-11 18:01:31.322 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:01:31.329 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:01:31.332 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:01:31.334 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:01:31.336 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:01:32.393 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:01:32.511 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 118.8808ms
+2021-03-11 18:01:33.004 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:01:33.139 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.1281ms
+2021-03-11 18:01:41.784 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Country - -
+2021-03-11 18:01:41.839 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2021-03-11 18:01:41.872 +03:30 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2021-03-11 18:01:42.302 +03:30 [INF] Executing action method HotelListing.Controllers.CountryController.GetCountries (HotelListing) - Validation state: "Valid"
+2021-03-11 18:01:43.045 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:01:43.673 +03:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2021-03-11 18:01:43.739 +03:30 [INF] Executed action method HotelListing.Controllers.CountryController.GetCountries (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1431.1794ms.
+2021-03-11 18:01:43.749 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Dtos.CountryDto, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-11 18:01:43.768 +03:30 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 1887.5536ms
+2021-03-11 18:01:43.770 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2021-03-11 18:01:43.778 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Country - - - 200 - application/json;+charset=utf-8 1994.3236ms
+2021-03-11 18:19:53.697 +03:30 [INF] Starting web Host
+2021-03-11 18:19:56.600 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:19:56.606 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:19:56.608 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:19:56.610 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:19:56.612 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:19:57.878 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:19:58.000 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 127.5730ms
+2021-03-11 18:19:58.621 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:19:58.764 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.6815ms
+2021-03-11 18:20:03.539 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/1 - -
+2021-03-11 18:20:03.580 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/1 - - - 404 0 - 40.6450ms
+2021-03-11 18:20:08.886 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/ - -
+2021-03-11 18:20:08.893 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2021-03-11 18:20:08.926 +03:30 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2021-03-11 18:20:09.367 +03:30 [INF] Executing action method HotelListing.Controllers.CountryController.GetCountries (HotelListing) - Validation state: "Valid"
+2021-03-11 18:20:10.127 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:20:10.784 +03:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2021-03-11 18:20:10.873 +03:30 [INF] Executed action method HotelListing.Controllers.CountryController.GetCountries (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1498.3835ms.
+2021-03-11 18:20:10.883 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Dtos.CountryDto, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-11 18:20:10.901 +03:30 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 1969.5026ms
+2021-03-11 18:20:10.904 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2021-03-11 18:20:10.914 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/ - - - 200 - application/json;+charset=utf-8 2027.9579ms
+2021-03-11 18:20:22.494 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/1 - -
+2021-03-11 18:20:22.497 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/1 - - - 404 0 - 2.8126ms
+2021-03-11 18:20:34.936 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/1 - -
+2021-03-11 18:20:34.937 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/1 - - - 404 0 - 1.7515ms
+2021-03-11 18:20:55.083 +03:30 [INF] Starting web Host
+2021-03-11 18:20:57.785 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:20:57.791 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:20:57.793 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:20:57.795 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:20:57.797 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:20:59.029 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:20:59.161 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 135.5162ms
+2021-03-11 18:20:59.688 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:20:59.844 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.4227ms
+2021-03-11 18:21:01.960 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/1 - -
+2021-03-11 18:21:01.998 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:21:02.044 +03:30 [INF] Route matched with {action = "GetCountry", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCountry(Int32) on controller HotelListing.Controllers.CountryController (HotelListing).
+2021-03-11 18:21:02.542 +03:30 [INF] Executing action method HotelListing.Controllers.CountryController.GetCountry (HotelListing) - Validation state: "Valid"
+2021-03-11 18:21:07.509 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:21:08.705 +03:30 [INF] Executed DbCommand (133ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ShortName], [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Name], [c].[ShortName]
+    FROM [Countries] AS [c]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Hotels] AS [h] ON [t].[Id] = [h].[CountryId]
+ORDER BY [t].[Id], [h].[Id]
+2021-03-11 18:21:08.801 +03:30 [INF] Executed action method HotelListing.Controllers.CountryController.GetCountry (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6252.2192ms.
+2021-03-11 18:21:08.811 +03:30 [INF] Executing OkObjectResult, writing value of type 'HotelListing.Dtos.CountryDto'.
+2021-03-11 18:21:08.832 +03:30 [INF] Executed action HotelListing.Controllers.CountryController.GetCountry (HotelListing) in 6781.7686ms
+2021-03-11 18:21:08.834 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:21:08.841 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore[TValue](Stream utf8Json, TValue value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-11 18:21:08.918 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/1 - - - 500 - text/plain 6957.1601ms
+2021-03-11 18:24:56.513 +03:30 [INF] Starting web Host
+2021-03-11 18:24:59.839 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:24:59.847 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:24:59.849 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:24:59.852 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:24:59.855 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:25:00.900 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:25:01.026 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 130.9922ms
+2021-03-11 18:25:01.623 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:25:01.752 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.7140ms
+2021-03-11 18:25:03.457 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/country/1 - -
+2021-03-11 18:25:03.495 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:25:03.534 +03:30 [INF] Route matched with {action = "GetCountry", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCountry(Int32) on controller HotelListing.Controllers.CountryController (HotelListing).
+2021-03-11 18:25:04.029 +03:30 [INF] Executing action method HotelListing.Controllers.CountryController.GetCountry (HotelListing) - Validation state: "Valid"
+2021-03-11 18:25:04.790 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:25:05.663 +03:30 [INF] Executed DbCommand (60ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ShortName], [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Name], [c].[ShortName]
+    FROM [Countries] AS [c]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Hotels] AS [h] ON [t].[Id] = [h].[CountryId]
+ORDER BY [t].[Id], [h].[Id]
+2021-03-11 18:25:05.753 +03:30 [INF] Executed action method HotelListing.Controllers.CountryController.GetCountry (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1716.0478ms.
+2021-03-11 18:25:05.764 +03:30 [INF] Executing OkObjectResult, writing value of type 'HotelListing.Dtos.CountryDto'.
+2021-03-11 18:25:06.035 +03:30 [INF] Executed action HotelListing.Controllers.CountryController.GetCountry (HotelListing) in 2492.563ms
+2021-03-11 18:25:06.039 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:25:06.047 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/country/1 - - - 200 129 application/json;+charset=utf-8 2590.3809ms
+2021-03-11 18:44:12.862 +03:30 [INF] Starting web Host
+2021-03-11 18:44:15.901 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:44:15.908 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:44:15.911 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:44:15.915 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:44:15.919 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:44:17.261 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:44:17.469 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 213.1931ms
+2021-03-11 18:44:18.171 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:44:18.379 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.5019ms
+2021-03-11 18:44:30.203 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel - -
+2021-03-11 18:44:30.239 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:44:30.270 +03:30 [INF] Route matched with {action = "GetHotels", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotels() on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:44:30.440 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotels (HotelListing) in 162.8406ms
+2021-03-11 18:44:30.443 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:44:30.449 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'HotelListing.Controllers.HotelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-11 18:44:30.508 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel - - - 500 - text/plain 304.6686ms
+2021-03-11 18:45:10.481 +03:30 [INF] Starting web Host
+2021-03-11 18:45:13.671 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:45:13.678 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:45:13.680 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:45:13.682 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:45:13.684 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:45:14.871 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:45:15.060 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 191.8487ms
+2021-03-11 18:45:15.680 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:45:15.799 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.4311ms
+2021-03-11 18:45:32.393 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel - -
+2021-03-11 18:45:32.430 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:45:32.460 +03:30 [INF] Route matched with {action = "GetHotels", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotels() on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:45:32.952 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotels (HotelListing) - Validation state: "Valid"
+2021-03-11 18:45:33.718 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:45:34.334 +03:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating]
+FROM [Hotels] AS [h]
+2021-03-11 18:45:34.402 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotels (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1442.6977ms.
+2021-03-11 18:45:34.411 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Dtos.HotelDto, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-11 18:45:34.592 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotels (HotelListing) in 2122.5117ms
+2021-03-11 18:45:34.596 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:45:34.605 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel - - - 200 187 application/json;+charset=utf-8 2211.9675ms
+2021-03-11 18:45:55.664 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/1 - -
+2021-03-11 18:45:55.668 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:45:55.682 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:45:55.736 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:45:55.764 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:45:55.989 +03:30 [ERR] Something wrong in the GetHotel 
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Countries' specified in string based include path 'Countries'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at HotelListing.Repository.GenericRepository`1.Get(Expression`1 expression, List`1 includes) in C:\Users\Rebwa\source\repos\HotelListing\HotelListing\Repository\GenericRepository.cs:line 45
+   at HotelListing.Controllers.HotelController.GetHotel(Int32 id) in C:\Users\Rebwa\source\repos\HotelListing\HotelListing\Controllers\HotelController.cs:line 51
+2021-03-11 18:45:56.061 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotel (HotelListing), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 323.8707ms.
+2021-03-11 18:45:56.065 +03:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-03-11 18:45:56.068 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotel (HotelListing) in 384.2773ms
+2021-03-11 18:45:56.080 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:45:56.083 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/1 - - - 500 - text/plain;+charset=utf-8 418.4898ms
+2021-03-11 18:46:13.355 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/1 - -
+2021-03-11 18:46:13.358 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:46:13.360 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:46:13.403 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:46:13.691 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:46:33.993 +03:30 [ERR] Something wrong in the GetHotel 
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation 'Countries' specified in string based include path 'Countries'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.InvalidIncludePathError(IDiagnosticsLogger`1 diagnostics, String navigationChain, String navigationName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at HotelListing.Repository.GenericRepository`1.Get(Expression`1 expression, List`1 includes) in C:\Users\Rebwa\source\repos\HotelListing\HotelListing\Repository\GenericRepository.cs:line 45
+   at HotelListing.Controllers.HotelController.GetHotel(Int32 id) in C:\Users\Rebwa\source\repos\HotelListing\HotelListing\Controllers\HotelController.cs:line 51
+2021-03-11 18:46:35.570 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotel (HotelListing), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22165.456ms.
+2021-03-11 18:46:35.572 +03:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-03-11 18:46:35.574 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotel (HotelListing) in 22213.0818ms
+2021-03-11 18:46:35.577 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:46:40.189 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/1 - - - 500 - text/plain;+charset=utf-8 26834.2744ms
+2021-03-11 18:46:44.892 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/1 - -
+2021-03-11 18:46:44.894 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:46:44.896 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:46:44.949 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:46:45.241 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:47:54.900 +03:30 [INF] Starting web Host
+2021-03-11 18:47:57.887 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:47:57.894 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:47:57.896 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:47:57.898 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:47:57.900 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:47:58.955 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:47:59.155 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 203.5099ms
+2021-03-11 18:47:59.793 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:47:59.972 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.2048ms
+2021-03-11 18:48:02.347 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/1 - -
+2021-03-11 18:48:02.393 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:48:02.431 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:48:02.906 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:48:04.010 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:48:10.877 +03:30 [INF] Executed DbCommand (58ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating], [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Hotels] AS [h]
+INNER JOIN [Countries] AS [c] ON [h].[CountryId] = [c].[Id]
+WHERE [h].[Id] = @__id_0
+2021-03-11 18:48:14.904 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotel (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11990.0197ms.
+2021-03-11 18:48:14.916 +03:30 [INF] Executing OkObjectResult, writing value of type 'HotelListing.Dtos.HotelDto'.
+2021-03-11 18:48:15.075 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotel (HotelListing) in 12631.764ms
+2021-03-11 18:48:15.079 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:48:15.087 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/1 - - - 200 140 application/json;+charset=utf-8 12740.0394ms
+2021-03-11 18:48:29.890 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/ - -
+2021-03-11 18:48:29.896 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:48:29.905 +03:30 [INF] Route matched with {action = "GetHotels", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotels() on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:48:29.962 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotels (HotelListing) - Validation state: "Valid"
+2021-03-11 18:48:29.991 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:48:30.008 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating]
+FROM [Hotels] AS [h]
+2021-03-11 18:48:30.016 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotels (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 52.9211ms.
+2021-03-11 18:48:30.019 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Dtos.HotelDto, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-11 18:48:30.023 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotels (HotelListing) in 115.521ms
+2021-03-11 18:48:30.025 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotels (HotelListing)'
+2021-03-11 18:48:30.027 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/ - - - 200 187 application/json;+charset=utf-8 136.6664ms
+2021-03-11 18:48:41.492 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/2 - -
+2021-03-11 18:48:41.494 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:48:41.496 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:48:41.540 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:48:41.765 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:48:47.476 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating], [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Hotels] AS [h]
+INNER JOIN [Countries] AS [c] ON [h].[CountryId] = [c].[Id]
+WHERE [h].[Id] = @__id_0
+2021-03-11 18:48:47.478 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotel (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5935.7575ms.
+2021-03-11 18:48:47.480 +03:30 [INF] Executing OkObjectResult, writing value of type 'HotelListing.Dtos.HotelDto'.
+2021-03-11 18:48:47.482 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotel (HotelListing) in 5984.0374ms
+2021-03-11 18:48:47.484 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:48:47.489 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/2 - - - 200 143 application/json;+charset=utf-8 5996.6352ms
+2021-03-11 18:56:31.500 +03:30 [INF] Starting web Host
+2021-03-11 18:56:34.896 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-11 18:56:34.905 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-11 18:56:34.907 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-11 18:56:34.911 +03:30 [INF] Hosting environment: Development
+2021-03-11 18:56:34.916 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-11 18:56:36.413 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-11 18:56:36.581 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 173.1430ms
+2021-03-11 18:56:37.316 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-11 18:56:37.499 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 183.8475ms
+2021-03-11 18:56:45.228 +03:30 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/hotel/2 - -
+2021-03-11 18:56:45.265 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:56:45.305 +03:30 [INF] Route matched with {action = "GetHotel", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHotel(Int32) on controller HotelListing.Controllers.HotelController (HotelListing).
+2021-03-11 18:56:45.796 +03:30 [INF] Executing action method HotelListing.Controllers.HotelController.GetHotel (HotelListing) - Validation state: "Valid"
+2021-03-11 18:56:46.567 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:56:47.366 +03:30 [INF] Executed DbCommand (59ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating], [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Hotels] AS [h]
+INNER JOIN [Countries] AS [c] ON [h].[CountryId] = [c].[Id]
+WHERE [h].[Id] = @__id_0
+2021-03-11 18:56:47.438 +03:30 [INF] Executed action method HotelListing.Controllers.HotelController.GetHotel (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1633.8951ms.
+2021-03-11 18:56:47.450 +03:30 [INF] Executing OkObjectResult, writing value of type 'HotelListing.Dtos.HotelDto'.
+2021-03-11 18:56:47.611 +03:30 [INF] Executed action HotelListing.Controllers.HotelController.GetHotel (HotelListing) in 2294.8959ms
+2021-03-11 18:56:47.615 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.HotelController.GetHotel (HotelListing)'
+2021-03-11 18:56:47.624 +03:30 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/hotel/2 - - - 200 143 application/json;+charset=utf-8 2396.0839ms
+2021-03-11 18:57:18.052 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Country/5 - -
+2021-03-11 18:57:18.070 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:57:18.076 +03:30 [INF] Route matched with {action = "GetCountry", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCountry(Int32) on controller HotelListing.Controllers.CountryController (HotelListing).
+2021-03-11 18:57:18.111 +03:30 [INF] Executing action method HotelListing.Controllers.CountryController.GetCountry (HotelListing) - Validation state: "Valid"
+2021-03-11 18:57:18.150 +03:30 [INF] Entity Framework Core 5.0.3 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-03-11 18:57:18.220 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ShortName], [h].[Id], [h].[Address], [h].[CountryId], [h].[Name], [h].[Rating]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Name], [c].[ShortName]
+    FROM [Countries] AS [c]
+    WHERE [c].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Hotels] AS [h] ON [t].[Id] = [h].[CountryId]
+ORDER BY [t].[Id], [h].[Id]
+2021-03-11 18:57:18.228 +03:30 [INF] Executed action method HotelListing.Controllers.CountryController.GetCountry (HotelListing), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 114.5739ms.
+2021-03-11 18:57:18.230 +03:30 [INF] Executing OkObjectResult, writing value of type 'null'.
+2021-03-11 18:57:18.233 +03:30 [INF] Executed action HotelListing.Controllers.CountryController.GetCountry (HotelListing) in 154.5278ms
+2021-03-11 18:57:18.234 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountry (HotelListing)'
+2021-03-11 18:57:18.237 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Country/5 - - - 204 0 - 185.1071ms
