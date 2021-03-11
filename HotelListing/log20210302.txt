@@ -1,0 +1,35 @@
+2021-03-02 15:49:48.766 +03:30 [INF] Starting web Host
+2021-03-02 15:49:54.865 +03:30 [INF] Now listening on: https://localhost:5001
+2021-03-02 15:49:54.871 +03:30 [INF] Now listening on: http://localhost:5000
+2021-03-02 15:49:54.874 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-02 15:49:54.876 +03:30 [INF] Hosting environment: Development
+2021-03-02 15:49:54.879 +03:30 [INF] Content root path: C:\Users\Rebwa\source\repos\HotelListing\HotelListing
+2021-03-02 15:49:59.834 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2021-03-02 15:50:00.106 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 275.2839ms
+2021-03-02 15:50:00.918 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-03-02 15:50:01.671 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 753.3195ms
+2021-03-02 15:50:02.810 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-03-02 15:50:02.877 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2021-03-02 15:50:02.877 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2021-03-02 15:50:03.158 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-03-02 15:50:03.235 +03:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-03-02 15:50:03.267 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 142933 text/css 457.7301ms
+2021-03-02 15:50:03.323 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 439.2666ms
+2021-03-02 15:50:03.446 +03:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-03-02 15:50:03.452 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 575.4016ms
+2021-03-02 15:50:04.434 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-03-02 15:50:04.566 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - -
+2021-03-02 15:50:04.621 +03:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-02 15:50:04.635 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 71.9121ms
+2021-03-02 15:50:04.847 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 413.0232ms
+2021-03-02 15:50:09.771 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/WeatherForecast - -
+2021-03-02 15:50:09.805 +03:30 [INF] Executing endpoint 'HotelListing.Controllers.WeatherForecastController.Get (HotelListing)'
+2021-03-02 15:50:09.827 +03:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HotelListing.WeatherForecast] Get() on controller HotelListing.Controllers.WeatherForecastController (HotelListing).
+2021-03-02 15:50:09.933 +03:30 [INF] Executing action method HotelListing.Controllers.WeatherForecastController.Get (HotelListing) - Validation state: "Valid"
+2021-03-02 15:50:09.937 +03:30 [INF] Start Get Method
+2021-03-02 15:50:09.939 +03:30 [WRN] oops**************************
+2021-03-02 15:50:09.951 +03:30 [INF] Executed action method HotelListing.Controllers.WeatherForecastController.Get (HotelListing), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.2469ms.
+2021-03-02 15:50:09.960 +03:30 [INF] Executing ObjectResult, writing value of type 'HotelListing.WeatherForecast[]'.
+2021-03-02 15:50:09.997 +03:30 [INF] Executed action HotelListing.Controllers.WeatherForecastController.Get (HotelListing) in 162.5317ms
+2021-03-02 15:50:10.000 +03:30 [INF] Executed endpoint 'HotelListing.Controllers.WeatherForecastController.Get (HotelListing)'
+2021-03-02 15:50:10.002 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 231.4930ms
