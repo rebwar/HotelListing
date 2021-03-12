@@ -17,7 +17,7 @@ namespace HotelListing.Configuration
               {
                   option.Password.RequiredLength = 6;
                   option.Password.RequireUppercase = false;
-                  option.Password.RequireNonAlphanumeric = false;
+                  option.Password.RequireNonAlphanumeric = false;                  
                   option.User.RequireUniqueEmail = true;
 
               });
