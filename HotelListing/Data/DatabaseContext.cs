@@ -22,7 +22,7 @@ namespace HotelListing.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new IdentityRoleConfiguration());
             modelBuilder.ApplyConfiguration(new CountryConfiguration());
-            modelBuilder.ApplyConfiguration(HotelConfiguration());
+            modelBuilder.ApplyConfiguration(new HotelConfiguration());
         }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
