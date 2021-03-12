@@ -17,6 +17,8 @@ using AutoMapper;
 using HotelListing.Configuration;
 using HotelListing.IRepository;
 using HotelListing.Repository;
+using Microsoft.AspNetCore.Identity;
+using HotelListing.Models;
 
 namespace HotelListing
 {
@@ -55,6 +57,9 @@ namespace HotelListing
             });
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+            services.AddAuthentication();
+            services.ConfigureIdentity();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,7 +77,7 @@ namespace HotelListing
             app.UseCors("allAllow");
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
