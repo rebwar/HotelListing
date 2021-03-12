@@ -1,4 +1,5 @@
-﻿using HotelListing.Models;
+﻿using HotelListing.Configuration.Entities;
+using HotelListing.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -19,42 +20,9 @@ namespace HotelListing.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Country>().HasData(
-                new Country
-                {
-                    Id = 2,
-                    Name = "Kurdistan",
-                    ShortName = "KR"
-                },
-                new Country
-                {
-                    Id = 1,
-                    Name = "Iran",
-                    ShortName = "IR"
-                }
-                );
-            modelBuilder.Entity<Hotel>().HasData(
-                new Hotel
-                {
-                    Id = 1,
-                    Name = "Parsian",
-                   
-                    Address = "Tehran Jomhouri",
-                    Rating = 4,
-                    CountryId = 1
-
-                },
-                new Hotel
-                {
-                    Id = 2,
-                    Name = "NewCity",
-                    
-                    Address = "Hewler, Azadi",
-                    Rating = 5,
-                    CountryId = 2
-
-                }
-                );
+            modelBuilder.ApplyConfiguration(new IdentityRoleConfiguration());
+            modelBuilder.ApplyConfiguration(new CountryConfiguration());
+            modelBuilder.ApplyConfiguration(HotelConfiguration());
         }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
